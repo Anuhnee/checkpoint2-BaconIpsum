@@ -107,9 +107,10 @@ article > p {
     justify-content: flex-start;
   }
 
-  article{
-      margin-top: 1em;
+  article {
+    margin-top: 1em;
   }
+}
 
 @media (min-width: 580px) {
   body {
