@@ -8,6 +8,10 @@ body {
   grid-template-rows: 10% repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  animation-name: color-gradient;
+  animation-duration: 15s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
 header {
@@ -16,6 +20,8 @@ header {
   justify-content: space-between;
   color: white;
   margin-top: 0.3em;
+  animation-name: fadein;
+  animation-duration: 5s;
 }
 
 #about {
@@ -54,16 +60,23 @@ body > p {
 }
 
 .bodyBottom > a {
-  text-decoration: inherit;
+  text-decoration: none;
   color: inherit;
   text-align: center;
   margin: auto;
-
 }
 
-article {
+button {
+  color: white;
   text-align: center;
   margin: auto;
+  background-color: black;
+  border: none;
+}
+
+button:hover::after,
+button:focus::after {
+  animation: growth 1s forwards;
 }
 
 h1 {
@@ -72,12 +85,19 @@ h1 {
   margin-top: 0;
 }
 
-article > p {
-  width: 25vh;
+button > p {
+  width: 33vh;
+  height: 20vh;
+  font-size: 1.5em;
 }
 
-#DarkBlue {
-  border-top: solid darkblue 20px;
+#DarkBlue > h1 {
+  border-top: solid 1px darkblue;
+  background-color:darkblue;
+  background-position:  10%;
+  background-size: 10%;
+
+
 }
 
 #Orange {
@@ -88,6 +108,7 @@ article > p {
   border-top: solid teal 20px;
 }
 
+/* Media Queries */
 @media (min-width: 320px) {
   body {
     display: grid;
@@ -189,5 +210,38 @@ article > p {
 
   article > p {
     width: 25vh;
+  }
+}
+
+/* Animations */
+@keyframes color-gradient {
+  0% {
+    background-color: #27c7be;
+  }
+  25% {
+    background-color: red;
+  }
+  50% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes growth {
+  from {
+    background-size: auto;
+    background-position: center top;
+    background-color: darkblue;
   }
 }
