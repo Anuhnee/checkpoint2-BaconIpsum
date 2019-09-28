@@ -1,0 +1,137 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 10% repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: teal;
+    color: white;
+  }
+  
+  /* Header and Children Styles */
+  header {
+    grid-area: 1 / 1 / 2 / 5;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5em;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  #home {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 1.5em;
+  }
+  
+  #about {
+    font-size: 1.5em;
+  }
+  
+  i {
+    font-size: 1.5em;
+  }
+  
+  .fa-instagram {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 1.5em;
+  }
+  
+  /* Middle Content Styles */
+  strong {
+    grid-area: 2 / 1 / 3 / 5;
+    justify-self: center;
+    align-self: center;
+    font-size: 8em;
+    color: black;
+  }
+  #text {
+    grid-area: 3 / 1 / 4 / 5;
+    background-color: white;
+    color: black;
+    justify-self: stretch;
+    margin: 0;
+    font-size: 1.5em;
+    text-align: left;
+  }
+  
+  p {
+    margin: 0.5em;
+    font-size: 2em;
+  }
+  
+  @media (min-width: 320px) {
+    body {
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 10% repeat(2, 1fr);
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+    }
+  
+    header {
+      grid-area: 1 / 1 / 2 / 5;
+    }
+    strong {
+      grid-area: 2 / 1 / 3 / 5;
+      font-size: 4em;
+    }
+    #text {
+      grid-area: 3 / 1 / 4 / 5;
+      text-align: left;
+      font-size: 1em;
+    }
+    #home {
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+      font-size: 1em;
+    }
+  
+    #about {
+      font-size: 1em;
+    }
+  
+    i {
+      font-size: 1em;
+    }
+  
+    .fa-instagram {
+      margin-left: 0.5em;
+      margin-right: 0.5em;
+      font-size: 1em;
+    }
+  }
+
+  @media (min-width: 600px) {
+    .fa-instagram {
+      font-size: 2em;
+    }
+  
+    .fa-facebook-square {
+      font-size: 2em;
+    }
+  
+    #home{
+        font-size: 2em;
+    }
+  
+    #about {
+      font-size: 2em;
+    }
+  
+    strong{
+        font-size: 9em;
+    }
+  }
+
+  
