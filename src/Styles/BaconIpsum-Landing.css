@@ -93,19 +93,53 @@ button > p {
 
 #DarkBlue > h1 {
   border-top: solid 1px darkblue;
-  background-color:darkblue;
-  background-position:  10%;
+  background-color: darkblue;
+  background-position: 10%;
   background-size: 10%;
-
-
 }
 
-#Orange {
-  border-top: solid orangered 20px;
+#DarkBlue{
+transition: background-color 0.5s ease-in-out;
 }
 
-#Teal {
-  border-top: solid teal 20px;
+#DarkBlue:hover{
+  cursor: pointer;
+  background-color:darkblue;
+  transition-duration: 0.5s;
+}
+
+#Orange > h1 {
+  border-top: solid orangered 1px;
+  background-color: orangered;
+  background-position: 10%;
+  background-size: 10%;
+}
+
+#Orange{
+  transition: background-color 0.5s ease-in-out;
+}
+
+#Orange:hover{
+  cursor: pointer;
+  background-color: orangered;
+  transition-duration: 0.5s
+}
+
+#Teal > h1{
+  border-top: solid teal 1px;
+  background-color: teal;
+  background-position: 10%;
+  background-size: 10%;
+}
+
+#Teal{
+  transition: background-color 0.5s ease-in-out;
+}
+
+#Teal:hover{
+  cursor: pointer;
+  background-color: teal;
+  transition-duration: 0.5s;
 }
 
 /* Media Queries */
@@ -235,13 +269,5 @@ button > p {
   }
   to {
     opacity: 1;
-  }
-}
-
-@keyframes growth {
-  from {
-    background-size: auto;
-    background-position: center top;
-    background-color: darkblue;
   }
 }
