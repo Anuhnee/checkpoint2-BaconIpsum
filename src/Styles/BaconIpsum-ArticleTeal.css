@@ -24,6 +24,7 @@ body {
   a {
     text-decoration: none;
     color: white;
+    font-family: 'Anton', sans-serif;
   }
   
   #home {
@@ -52,6 +53,7 @@ body {
     justify-self: center;
     align-self: center;
     font-size: 8em;
+    font-family: 'Lexend Zetta', sans-serif;
     color: black;
   }
   #text {
