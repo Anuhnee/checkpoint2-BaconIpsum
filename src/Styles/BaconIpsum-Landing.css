@@ -46,10 +46,11 @@ header {
   margin: 0.3em;
 }
 
+/* Landing Welcome */
 body > #welcome {
   grid-area: 2 / 1 / 3 / 5;
   text-align: center;
-  font-size: 3em;
+  font-size: 4em;
   font-family: "Lexend Zetta", sans-serif;
 }
 
@@ -71,16 +72,16 @@ body > #welcome {
   margin: auto;
 }
 
-/* "Article" Styling */
+/* "Article" Container Styling */
 button {
   color: white;
   text-align: center;
-  margin: auto;
+  margin: 500px;
   background-color: black;
   border: none;
-  width: auto;
 }
 
+/* Title */
 h1 {
   font-size: 3em;
   margin-bottom: 0;
@@ -88,6 +89,7 @@ h1 {
   font-family: "Merriweather", serif;
 }
 
+/* Article Paragraph Preview */
 button > p {
   font-size: 1.5em;
   width: 20vh;
@@ -164,7 +166,7 @@ button > p {
     color: white;
   }
 
-  #about{
+  #about {
     font-size: 1em;
   }
 
